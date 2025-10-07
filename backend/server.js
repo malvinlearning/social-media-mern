@@ -30,6 +30,6 @@ app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
 
 app.listen(PORT, () => {
-    console.log("Server running on port PORT");
+    console.log(`Server running on port PORT ${PORT}`);
     connectMongoDB();
 });
